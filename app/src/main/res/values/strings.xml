@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OrdeNums</string>
+    <string name="TituloMain">OrdeNums</string>
+    <string name="Descripcion">Esta aplicación ordena 20 números de máximo 4 dígitos. ¡Ingrésalos y observa cómo se ordenan ascendentemente!</string>
+    <string name="InputNum">Número</string>
+    <string name="AddNum">Añadir</string>
+    <string name="FaltaNum">Por favor ingresa un número</string>
+</resources>
+
