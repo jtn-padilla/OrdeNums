@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OrdeNums</string>
+    <string name="TituloMain">OrdeNums</string>
+    <string name="Descripcion">This App orders 4 digit (max) numbers. Enter them and watch them order ascendingly!</string>
+    <string name="InputNum">Number</string>
+    <string name="AddNum">Add</string>
+    <string name="FaltaNum">Please enter a number</string>
 </resources>
