@@ -5,5 +5,8 @@
     <string name="InputNum">Número</string>
     <string name="AddNum">Añadir</string>
     <string name="FaltaNum">Por favor ingresa un número</string>
+    <string name="PosNeg">Ingresa un número de 4 dígitos negativo o positivo</string>
+    <string name="Ordenado">El arreglo ordenado es:  </string>
+
 </resources>
 

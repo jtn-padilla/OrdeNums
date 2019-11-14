@@ -34,24 +34,31 @@ public class MainActivity extends AppCompatActivity
             {
                 if(etIngresa.length() != 0)
                 {
-                    clicks += 1;
                     int n = Integer.parseInt(etIngresa.getText().toString());
-                    arreglo[clicks] = n;
-                    Log.d("AGREGA","Se agrega");
-                    Toast.makeText(MainActivity.this, Arrays.toString(arreglo), Toast.LENGTH_SHORT).show();
-                    if (clicks == arreglo.length-1)
+                    if(n >= -9999 && n <= 9999)
                     {
-                        //Toast.makeText(MainActivity.this, "Se entra a if", Toast.LENGTH_SHORT).show();
-                        clicks = -1;
-                        ordenaArreglo(arreglo);
-                        Toast.makeText(MainActivity.this, "El arreglo ordenado es: "+Arrays.toString(arreglo), Toast.LENGTH_LONG).show();
-                        Arrays.fill(arreglo,0);
+                        clicks += 1;
+                        arreglo[clicks] = n;
+                        Toast.makeText(MainActivity.this, Arrays.toString(arreglo), Toast.LENGTH_SHORT).show();
+                        if (clicks == arreglo.length-1)
+                        {
+                            clicks = -1;
+                            ordenaArreglo(arreglo);
+                            Toast.makeText(MainActivity.this, MainActivity.this.getString(R.string.Ordenado)+Arrays.toString(arreglo), Toast.LENGTH_LONG).show();
+                            Arrays.fill(arreglo,0);
+                        }
+                        etIngresa.getText().clear();
                     }
-                    etIngresa.getText().clear();
+                    else
+                    {
+                        Toast.makeText(MainActivity.this, getApplicationContext().getString(R.string.PosNeg), Toast.LENGTH_SHORT).show();
+                    }
+
+
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this, "@strings/FaltaNum", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getApplicationContext().getString(R.string.FaltaNum), Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -78,6 +85,5 @@ public class MainActivity extends AppCompatActivity
                 }
            }
        }
-        Log.d("ORDENA","Se ordeno");
     }
 }

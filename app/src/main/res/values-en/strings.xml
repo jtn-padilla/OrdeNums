@@ -5,4 +5,6 @@
     <string name="InputNum">Number</string>
     <string name="AddNum">Add</string>
     <string name="FaltaNum">Please enter a number</string>
+    <string name="PosNeg">Enter a 4 digit number, positive or negative</string>
+    <string name="Ordenado">The ordered array is:  </string>
 </resources>
